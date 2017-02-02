@@ -10,7 +10,7 @@ def stack_push(data):
     else:
         list[topPtr]=data
         topPtr+=1
-    print(topPtr)
+    #print(topPtr)
     print(list)
         
 def stack_pop():
@@ -20,9 +20,15 @@ def stack_pop():
     else:
         list[topPtr-1]=None
         topPtr-=1
-    print(topPtr)
+    #print(topPtr)
     print(list)
-    
-print(list)
 
-    
+end=0
+while (end==0):
+    uin=input("1:Push, 2:Pop")
+    if (uin=='1'):
+        stack_push(1)
+    elif (uin=='2'):
+        stack_pop()
+    else:
+        print("Error")
